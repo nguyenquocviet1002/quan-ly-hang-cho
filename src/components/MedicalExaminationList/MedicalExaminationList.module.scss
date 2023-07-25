@@ -1,0 +1,73 @@
+.medicalListBox {
+  display: flex;
+  gap: 10px;
+  min-height: 100vh;
+  background-color: #fdfdfc;
+}
+
+.medicalListBoxLeft {
+  width: 50%;
+  margin: 250px 100px;
+  p {
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+
+.medicalNumb {
+  font-size: 100px;
+}
+
+.medicalName {
+  font-size: 30px;
+}
+
+.medicalService {
+  font-size: 22px;
+}
+
+.medicalListBoxMid {
+  border: 1px solid #d4a351;
+}
+
+.medicalListBoxRight {
+  width: 50%;
+  margin: 250px 100px;
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .medicalListBoxLeft {
+    margin: 120px 100px;
+  }
+  .medicalListBoxRight {
+    margin: 120px 100px;
+  }
+}
+@media (max-width: 1280px) {
+  .medicalListBoxLeft {
+    margin: 80px 100px;
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .medicalNumb {
+    font-size: 86px;
+  }
+  .medicalName {
+    font-size: 25px;
+  }
+  .medicalService {
+    font-size: 20px;
+  }
+  .medicalListBoxRight {
+    margin: 80px 100px;
+    h2 {
+      font-size: 26px;
+    }
+  }
+}
