@@ -1,0 +1,33 @@
+.bookingList {
+  border: 1px solid #f4f4f4;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  padding: 20px 50px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.icon {
+  i {
+    color: #ef1818;
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
+
+.text {
+  margin: 0;
+  color: #d4a351;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 820px) {
+  .bookingList {
+    padding: 20px 25px;
+  }
+}
+@media (max-width: 768px) {
+  .bookingList {
+    padding: 20px;
+  }
+}

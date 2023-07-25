@@ -1,0 +1,41 @@
+.clinicList {
+  border: 1px solid #f4f4f4;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  padding: 20px 50px;
+  border-radius: 8px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.clinicAdd {
+  border: 1px solid #f4f4f4;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  padding: 20px 50px;
+  border-radius: 8px;
+  margin-top: 30px;
+  width: 30%;
+}
+
+.clinicTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.iconAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  i {
+    font-size: 18px;
+    cursor: pointer;
+    &:nth-child(1) {
+      color: #2fa448;
+    }
+    &:nth-child(2) {
+      color: #ef1818;
+    }
+  }
+}

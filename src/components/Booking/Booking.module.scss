@@ -1,0 +1,39 @@
+.formBooking {
+  border: 1px solid #f4f4f4;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  padding: 20px 50px;
+  border-radius: 8px;
+  margin-top: 30px;
+  input {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+}
+
+.formInput {
+  margin-bottom: 16px;
+}
+
+.formSelect {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.formSelectItem {
+  width: 100%;
+  margin: 0 0 16px 0;
+}
+
+@media (max-width: 1024px) {
+  .formBooking {
+    padding: 20px 25px;
+  }
+}
+@media (max-width: 425px) {
+  .formSelect {
+    flex-direction: column;
+    gap: 0;
+  }
+}
