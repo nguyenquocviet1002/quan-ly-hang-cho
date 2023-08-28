@@ -14,6 +14,7 @@ function Button(props) {
         [styles.submitAdd]: props.submitAdd,
         [styles.btnYes]: props.btnYes,
         [styles.btnNo]: props.btnNo,
+        [styles.submitLogin]: props.submitLogin,
     });
 
     return (

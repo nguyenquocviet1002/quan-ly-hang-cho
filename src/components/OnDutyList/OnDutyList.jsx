@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 import Button from '../Button';
 import styles from './OnDutyList.module.scss';
 
@@ -8,6 +9,8 @@ function OnDutyList() {
   const onDutyBox = clsx(styles.onDutyBox);
   const onDutyTitle = clsx(styles.onDutyTitle);
   const iconAction = clsx(styles.iconAction);
+  const iconEdit = clsx(styles.iconEdit);
+  const iconTrash = clsx(styles.iconTrash);
   return (
     <div className="container">
       <div className={onDutyBox}>
@@ -15,7 +18,9 @@ function OnDutyList() {
           <div className={onDutyTitle}>
             <h2>Danh sách lịch trực</h2>
             <div>
-              <Button submitAdd>Thêm</Button>
+              <Link to="../onduty-list-add">
+                <Button submitAdd>Thêm</Button>
+              </Link>
             </div>
           </div>
           <div className="table-responsive">
@@ -37,8 +42,12 @@ function OnDutyList() {
                   <td>8h-10h(26/05/2023)</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../onduty-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../onduty-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -50,8 +59,12 @@ function OnDutyList() {
                   <td>8h-10h(26/05/2023)</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../onduty-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../onduty-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -63,8 +76,12 @@ function OnDutyList() {
                   <td>8h-10h(26/05/2023)</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../onduty-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../onduty-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -76,8 +93,12 @@ function OnDutyList() {
                   <td>8h-10h(26/05/2023)</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../onduty-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../onduty-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -89,8 +110,12 @@ function OnDutyList() {
                   <td>8h-10h(26/05/2023)</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../onduty-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../onduty-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>

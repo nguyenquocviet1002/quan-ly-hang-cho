@@ -71,6 +71,20 @@
   }
 }
 
+.submitLogin {
+  background-color: #d4a351;
+  border-color: #cc9736;
+  width: 40%;
+  display: block;
+  margin: 5px auto;
+  padding: 5px 10px;
+  border-radius: 30px;
+  &:hover {
+    background-color: #c08b2e;
+    border-color: #cc9736;
+  }
+}
+
 .btnYes {
   background-color: #2fa448;
   border-color: #2fa448;

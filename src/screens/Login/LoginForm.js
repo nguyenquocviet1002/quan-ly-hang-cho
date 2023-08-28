@@ -8,7 +8,7 @@ function LoginForm() {
         <form>
             <Input default label="Email" name="email"></Input>
             <Input default label="Password" name="password" type="password"></Input>
-            <Button submit>Đăng nhập</Button>
+            <Button submitLogin>Đăng nhập</Button>
         </form>
     )
 }

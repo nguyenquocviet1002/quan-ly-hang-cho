@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-around;
   gap: 115px;
-  padding: 10px 0;
   border-bottom: 1px solid #efefef;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1490196078);
   background-color: #243648;
@@ -12,6 +11,7 @@
     width: 6%;
     height: auto;
     display: block;
+    padding: 6px 0;
   }
 }
 
@@ -32,6 +32,7 @@
   a {
     color: #fff;
     position: relative;
+    padding: 24px 0;
     &:hover {
       text-decoration: none;
       color: #d4a351;
@@ -46,11 +47,12 @@
     display: none;
     background-color: #243648;
     position: absolute;
-    top: 5px;
+    top: 55px;
     left: -28px;
     width: 172%;
-    padding: 18px;
-    border-radius: 6px;
+    padding: 18px 18px 8px;
+    border-radius: 0 0 6px 6px;
+    z-index: 20;
     li {
       list-style: none;
       &:first-child {
