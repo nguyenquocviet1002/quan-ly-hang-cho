@@ -21,9 +21,9 @@ import OnDutyListDelete from '@/components/OnDutyListDelete';
 const ScreenRoot = () => {
     return (
         <GlobalStyles>
-            <Router>
+            <Router basename='/app/quan-ly-hang-cho'>
                 <Routes>
-                    <Route path='/' element={<ScreenDemo />} />
+                    {/* <Route path='/' element={<ScreenDemo />} /> */}
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Regis />} />
                     <Route path='/dashboard' element={<Dashboard />}>
