@@ -12,11 +12,6 @@
   max-width: 340px;
   width: 100%;
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-
   &Link {
     padding: 12px;
     font-size: 12px;
@@ -24,6 +19,16 @@
     cursor: pointer;
     text-align: center;
     color: #d4a351;
+  }
+}
+.form__logo {
+  display: block;
+  margin: 15px auto;
+  width: 200px;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
 a {
@@ -68,11 +73,19 @@ select {
   border: 1px solid #ccc;
 }
 
-// .container {
-//   width: 1700px;
-// }
+.container {
+  width: 1720px;
+}
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 @media (max-width: 1024px) {
+  .container {
+    width: 970px;
+  }
   h2 {
     font-size: 20px;
   }
@@ -83,7 +96,15 @@ select {
     font-size: 15px;
   }
 }
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
 @media (max-width: 425px) {
+  .container {
+    width: 100%;
+  }
   h2 {
     font-size: 18px;
   }

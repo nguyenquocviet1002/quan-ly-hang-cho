@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 import Button from '../Button';
 import styles from './ClinicList.module.scss';
 
@@ -8,6 +9,8 @@ function ClinicList() {
   const clinicBox = clsx(styles.clinicBox);
   const clinicTitle = clsx(styles.clinicTitle);
   const iconAction = clsx(styles.iconAction);
+  const iconEdit = clsx(styles.iconEdit);
+  const iconTrash = clsx(styles.iconTrash);
   return (
     <div className="container">
       <div className={clinicBox}>
@@ -15,7 +18,9 @@ function ClinicList() {
           <div className={clinicTitle}>
             <h2>Danh sách phòng khám</h2>
             <div>
-              <Button submitAdd>Thêm</Button>
+              <Link to="../clinic-list-add">
+                <Button submitAdd>Thêm</Button>
+              </Link>
             </div>
           </div>
           <div className="table-responsive">
@@ -37,8 +42,12 @@ function ClinicList() {
                   <td>Trần Quang Khải</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../clinic-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../clinic-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -50,8 +59,12 @@ function ClinicList() {
                   <td>Trần Quang Khải</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../clinic-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../clinic-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -63,8 +76,12 @@ function ClinicList() {
                   <td>Trần Quang Khải</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../clinic-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../clinic-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -76,8 +93,12 @@ function ClinicList() {
                   <td>Trần Quang Khải</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../clinic-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../clinic-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -89,8 +110,12 @@ function ClinicList() {
                   <td>Trần Quang Khải</td>
                   <td>
                     <div className={iconAction}>
-                      <i className="icon-edit"></i>
-                      <i className="icon-trash-empty"></i>
+                      <Link to="../clinic-list-edit">
+                        <i className={`${iconEdit} icon-edit`}></i>
+                      </Link>
+                      <Link to="../clinic-list-delete">
+                        <i className={`${iconTrash} icon-trash-empty`}></i>
+                      </Link>
                     </div>
                   </td>
                 </tr>

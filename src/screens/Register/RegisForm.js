@@ -9,7 +9,7 @@ function RegisForm() {
             <Input default label="Email" name="email"></Input>
             <Input default label="Password" name="password" type="password"></Input>
             <Input default label="Confirm Password" name="password" type="password"></Input>
-            <Button submit>Đăng ký</Button>
+            <Button submitLogin>Đăng ký</Button>
         </form>
     )
 }
