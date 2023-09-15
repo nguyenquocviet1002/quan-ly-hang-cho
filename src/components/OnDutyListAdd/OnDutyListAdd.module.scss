@@ -6,19 +6,21 @@
 
 .onDutyList {
   border: 1px solid #f4f4f4;
-  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
-  padding: 20px 50px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
   border-radius: 8px;
-  margin-top: 30px;
+  margin-top: 8px;
   width: 70%;
 }
 
 .onDutyAdd {
   border: 1px solid #f4f4f4;
-  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
-  padding: 20px 50px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
   border-radius: 8px;
-  margin-top: 30px;
+  margin-top: 8px;
   width: 30%;
 }
 
@@ -41,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 15px 0;
 }
 
 .iconAction {
@@ -58,5 +60,41 @@
     &:nth-child(2) {
       color: #ef1818;
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  .onDutyList {
+    padding: 20px 30px;
+  }
+  .onDutyAdd {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 1280px) {
+  .onDutyList {
+    padding: 15px 20px;
+  }
+  .onDutyAdd {
+    padding: 15px;
+  }
+}
+@media (max-width: 820px) {
+  .onDutyBox {
+    flex-direction: column;
+  }
+  .onDutyList {
+    width: 100%;
+  }
+  .onDutyAdd {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .onDutyBox {
+    gap: 16px;
+  }
+  .onDutyList {
+    margin-top: 4px;
   }
 }

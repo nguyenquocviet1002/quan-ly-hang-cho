@@ -6,10 +6,12 @@ function BookingList() {
   const bookingList = clsx(styles.bookingList);
   const icon = clsx(styles.icon);
   const text = clsx(styles.text);
+  const table__box1 = clsx(styles.table__box1);
+  const table__box2 = clsx(styles.table__box2);
   return (
     <div className="container">
       <div className={bookingList}>
-        <div className="table__box1">
+        <div className={table__box1}>
           <h2>Danh sách đặt lịch khám từ ERP và KH trực tiếp</h2>
           <div className="table-responsive">
             <table className="table table-bordered">
@@ -98,7 +100,7 @@ function BookingList() {
             </table>
           </div>
         </div>
-        <div className="table__box2">
+        <div className={table__box2}>
           <h2>Danh sách hàng chờ theo ngày</h2>
           <div className="table-responsive">
             <table className="table table-bordered">

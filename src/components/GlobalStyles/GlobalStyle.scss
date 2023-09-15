@@ -31,28 +31,27 @@
     display: block;
   }
 }
-a {
-  color: #d4a351;
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
 h2 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   margin-top: 10px;
   text-transform: uppercase;
-  color: #d4a351;
+  color: #5d87ff;
+}
+
+table {
+  font-size: 14px;
 }
 
 tr {
   &:first-child {
     font-weight: 600;
     font-size: 16px;
-    background-color: #f4f4f4;
+    background-color: #648cff;
+    color: #fff;
   }
 }
 
@@ -98,7 +97,7 @@ select {
 }
 @media (min-width: 768px) {
   .container {
-    width: 90%;
+    width: 97%;
   }
 }
 @media (max-width: 425px) {

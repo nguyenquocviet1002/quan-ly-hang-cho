@@ -1,18 +1,14 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
   gap: 115px;
   border-bottom: 1px solid #efefef;
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1490196078);
-  background-color: #243648;
-
-  img {
-    width: 6%;
-    height: auto;
-    display: block;
-    padding: 6px 0;
-  }
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 22px 10px 0;
+  margin: 20px 38px;
+  border-radius: 8px;
+  background: #fff;
 }
 
 .btnCheck {
@@ -67,21 +63,76 @@
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  position: relative;
 
   i {
-    color: #fff;
+    color: #000;
   }
 
   p {
     margin: 0;
     font-size: 15px;
-    color: #fff;
+    color: #000;
+  }
+
+  &:hover .user__dropdown {
+    display: block;
+    transition: all 0.2s linear;
+  }
+}
+
+.user__dropdown {
+  display: none;
+  position: absolute;
+  top: 108%;
+  left: 8%;
+  width: 150px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 8%);
+  box-shadow: 0 5px 25px rgba(34, 41, 47, 0.1);
+  padding: 0px 5px;
+  text-align: left;
+  z-index: 9;
+
+  ul {
+    padding: 0;
+    margin: 10px 0px;
+  }
+}
+
+.user__itemMenu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+
+  &:nth-child(3) {
+    border-bottom: 0px;
+  }
+
+  &:hover {
+    background: #f4f4f4;
+    color: #5d87ff;
+
+    a {
+      color: #5d87ff;
+    }
   }
 }
 
 @media (max-width: 1440px) {
   .header {
     gap: 60px;
+    margin: 20px 32px;
   }
 }
 @media (max-width: 1280px) {
@@ -92,6 +143,8 @@
 @media (max-width: 1024px) {
   .header {
     gap: 300px;
+    justify-content: space-between;
+    padding: 0 10px;
     img {
       width: 8%;
     }
@@ -106,7 +159,7 @@
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 3px solid #d4a351;
+      border-top: 3px solid #5d87ff;
     }
   }
   .menu {
@@ -115,7 +168,7 @@
   .user {
     i,
     p {
-      color: #d4a351;
+      color: #000;
     }
   }
 }
@@ -130,6 +183,7 @@
 @media (max-width: 425px) {
   .header {
     gap: 100px;
+    margin: 20px 16px;
     img {
       width: 22%;
     }
@@ -140,6 +194,15 @@
     }
     p {
       display: none;
+    }
+  }
+  .user__dropdown {
+    right: -35%;
+    left: unset;
+  }
+  .user__itemMenu {
+    i {
+      font-size: 18px;
     }
   }
 }
