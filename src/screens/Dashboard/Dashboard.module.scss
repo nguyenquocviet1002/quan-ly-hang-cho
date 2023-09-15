@@ -1,0 +1,14 @@
+.dashboardMain {
+  display: flex;
+}
+.boxRight {
+  margin-left: 250px;
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+@media (max-width: 1024px) {
+  .boxRight {
+    margin-left: 0px;
+  }
+}

@@ -45,29 +45,28 @@
 }
 
 .submit {
-  background-color: #d4a351;
-  border-color: #cc9736;
+  background-color: #5d87ff;
+  border-color: #5d87ff;
   width: 6%;
   display: block;
   margin: 5px auto;
   padding: 5px 10px;
   border-radius: 10px;
   &:hover {
-    background-color: #c08b2e;
-    border-color: #cc9736;
+    background-color: #87a6ff;
+    border-color: #87a6ff;
   }
 }
 
 .submitAdd {
-  background-color: #d4a351;
-  border-color: #cc9736;
+  background-color: #5d87ff;
+  border-color: #5d87ff;
   display: block;
   padding: 5px 18px;
   border-radius: 10px;
-  margin-bottom: 25px;
   &:hover {
-    background-color: #c08b2e;
-    border-color: #cc9736;
+    background-color: #87a6ff;
+    border-color: #87a6ff;
   }
 }
 
@@ -76,7 +75,7 @@
   border-color: #cc9736;
   width: 40%;
   display: block;
-  margin: 5px auto;
+  margin: 15px auto 0;
   padding: 5px 10px;
   border-radius: 30px;
   &:hover {

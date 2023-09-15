@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ScreenDemo from './Demo';
 import GlobalStyles from '@/components/GlobalStyles';
 import Login from './Login';
 import Regis from './Register';
@@ -23,7 +22,6 @@ const ScreenRoot = () => {
         <GlobalStyles>
             <Router basename='/app/quan-ly-hang-cho'>
                 <Routes>
-                    {/* <Route path='/' element={<ScreenDemo />} /> */}
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Regis />} />
                     <Route path='/dashboard' element={<Dashboard />}>

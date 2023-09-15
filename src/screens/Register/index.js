@@ -9,7 +9,7 @@ function Regis() {
             </div>
             <RegisForm></RegisForm>
             <p className="formLink">
-                <Link to="/login">Login</Link>
+                <Link to="/login">Have already an account? Login here</Link>
             </p>
         </div>
     )
